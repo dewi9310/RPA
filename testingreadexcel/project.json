@@ -1,7 +1,7 @@
 {
   "name": "testingreadexcel",
   "description": "Blank Process",
-  "main": "Main.xaml",
+  "main": "readExcel.xaml",
   "dependencies": {
     "SQLiteDatabaseForUiPath": "[1.0.17]",
     "UiPath.Excel.Activities": "[2.7.2]",

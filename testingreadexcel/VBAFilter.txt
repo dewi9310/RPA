@@ -1,0 +1,10 @@
+Sub AutoFilter_Range(sheetName As String, ColumnNumber As long, rowNumber As long)
+'AutoFilter is a member of the Range object
+  Dim ColumnLetter As String
+  ColumnLetter = Split(Cells(1, ColumnNumber).Address, "$")(1)
+  
+  'Fully qualified reference starting at Workbook level
+  ThisWorkbook.Worksheets(sheetName).Cells.EntireColumn.AutoFit
+  ThisWorkbook.Worksheets(sheetName).Range("A1:"&ColumnLetter & rowNumber).AutoFilter
+
+End Sub
